@@ -1,17 +1,13 @@
-// src/components/Testej.test.tsx
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
+import Testej from './testej'; 
 
-import React from 'react';
-import { render, screen } from '@testing-library/react'; // Biblioteca para testes de componentes React
-import '@testing-library/jest-dom'; // Extensão de Jest com asserções úteis para manipulação de DOM
-import Testej from './testej'; // Importa o componente que queremos testar
 
-test('renders the Testej component correctly', () => {
-  // Renderiza o componente
-  render(<Testej />);
+describe('Testej Component', () => {
+  it('renders the Testej component correctly', () => {
+    render(<Testej />);
+    const element = screen.getByText(/Hello world!/i);
 
-  // Seleciona o elemento no DOM que estamos testando por seu texto
-  const element = screen.getByText(/This is the Testej component!/i);
-
-  // Asserte que o elemento está presente no documento
-  expect(element).toBeInTheDocument();
+    expect(element).toBeInTheDocument();
+  });
 });

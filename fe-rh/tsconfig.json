@@ -1,18 +1,7 @@
 {
-    "compilerOptions": {
-      "target": "ES2020",           // O alvo ES Next, mas ES2020 é uma escolha segura
-      "lib": ["ES2020", "DOM", "DOM.Iterable"],
-      "module": "ESNext",           // ESNext para suportar importações modernas
-      "skipLibCheck": true,
-      "esModuleInterop": true,      // Permite a importação padrão de módulos CommonJS
-      "allowSyntheticDefaultImports": true,
-      "strict": true,
-      "forceConsistentCasingInFileNames": true,
-      "moduleResolution": "node",
-      "resolveJsonModule": true,
-      "isolatedModules": true,
-      "noEmit": true,
-      "jsx": "react",               // Permite o uso de JSX
-    },
-    "include": ["src"]
-  }
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}

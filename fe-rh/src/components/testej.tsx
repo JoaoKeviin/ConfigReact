@@ -1,8 +1,11 @@
-// src/components/Testej.tsx
 import React from 'react';
 
 const Testej: React.FC = () => {
-  return <div>This is the Testej component!</div>;
+  return (
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+  );
 };
 
 export default Testej;

@@ -5,10 +5,10 @@ const config: Config = {
   transform: {
     '^.+\\.(ts|tsx)$': 'ts-jest',
   },
+  setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
   moduleNameMapper: {
     '\\.(css|less)$': 'identity-obj-proxy',
   },
-  setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
 };
 
 export default config;

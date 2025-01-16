@@ -1,12 +1,13 @@
-import './App.css'
 import Testej from './components/testej'
 
 function App() {
 
+
   return (
-   <div>
+    <div>
     <Testej />
     </div>
+  
   )
 }
 
