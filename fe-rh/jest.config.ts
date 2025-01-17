@@ -9,6 +9,12 @@ const config: Config = {
   moduleNameMapper: {
     '\\.(css|less)$': 'identity-obj-proxy',
   },
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+  globals: {
+    'ts-jest': {
+      tsconfig: '<rootDir>/tsconfig.app.json',
+    },
+  },
 };
 
 export default config;
